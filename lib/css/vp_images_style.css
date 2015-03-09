@@ -1,0 +1,220 @@
+.vertical .carousel-inner {
+  height: 100%;
+}
+
+.carousel.vertical .carousel-inner .item {
+  -webkit-transition: 0.6s ease-in-out top;
+     -moz-transition: 0.6s ease-in-out top;
+      -ms-transition: 0.6s ease-in-out top;
+       -o-transition: 0.6s ease-in-out top;
+          transition: 0.6s ease-in-out top;
+}
+
+ .carousel.vertical .active {
+  top: 0;
+}
+
+ .carousel.vertical .next {
+  top: 100%;
+}
+
+ .carousel.vertical .prev {
+  top: -100%;
+}
+
+ .carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+  top: 0;
+}
+
+ .carousel.vertical .active.left {
+  top: -100%;
+}
+
+ .carousel.vertical .active.right {
+  top: 100%;
+}
+
+ .carousel.vertical .item {
+    left: 0;
+}
+/* Image Block CSS Start */
+.wrap {
+	position: relative;
+	overflow: hidden;
+	width: 130px;
+	height: 120px;
+	float: left;
+	margin: 5px;
+
+}
+.wrap2 {
+	/*position: relative;
+	overflow: hidden;*/
+	background-color:#CCCCCC;
+	border:double;
+	width: 30px;
+	height: 95px;
+	float: left;
+	margin: 5px;
+	cursor: pointer;
+}
+.wrap3 {
+	/*position: relative;
+	overflow: hidden;*/
+	background-image:url(drag.png);
+	background-size: cover;
+   -webkit-background-size: 100% 100%;
+   -moz-background-size: 100% 100%;
+   -o-background-size: 100% 100%;
+	background-size: 100% 100%;
+	width: 40%;
+	height: 30%;
+	margin-top:30px;
+	margin-left:8px;
+	cursor: pointer;
+}
+.wrap2:hover {
+	background-color:#999999;
+}
+
+.wrap3:hover {
+	background-color:#999999;
+}
+.wrap img.fake {
+	float: left;
+	width: auto;
+    visibility: hidden; 
+}
+
+.img_wrap {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+
+}
+
+.img_wrap img.normal {
+	width: 130px;
+	height: 100px;
+}		
+/* Image Block CSS End */
+
+/* vp Styles CSS Start  */
+
+.vp_inline_block{
+	 display:table-row ;/* inline-block */
+ }
+
+.vp_block{
+	display:block;
+}
+
+.vp_top{
+	vertical-align: top;
+}
+
+.vp_left{
+	float:left;
+}
+
+.vp_right{
+	float:right;
+}
+
+.vp_center{
+	text-align:center;
+}
+
+.vp_no_margin{
+	margin:0px;
+}
+.vp_no_padding{
+	padding:0px;
+}
+.vp_text_box{
+border: 2px solid #ccc;
+/*box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;*/
+}
+.vp_btn{
+	cursor:pointer;
+	background-color: #999999;/*337ab7*/
+/*	padding: 10px; */
+	color: #FFFFFF; 
+	border-color: #000000;/*2e6da4*/
+	border-style:double;
+	border-width:1px;
+	border-radius: 5px;
+}
+
+.vp_btn:hover{
+	background-color: #000000;/*286090*/
+/*	border-color: #204d74;  
+	color: #fff;   
+*/
+}
+
+.vp_container{
+	background-color: #FFF;
+/*	margin-top: 10px;   */
+	padding: 20px;
+}
+
+.vp_clear{
+	clear:both;
+}
+
+.vp_image_row{
+	border-radius:5px;
+	background-color: #EAEAEA;
+	padding: 1%;
+	margin:1%;
+	/*cursor: pointer;   Use for Pointer Behave as Link.....*/
+}
+
+.vp_hr{
+	border-color: #000000;
+}
+
+.vp_delete_btn{
+	border-radius:15px;
+	padding: 5px;
+	padding-right: 10px;
+	padding-left: 10px;	
+	font-size: 12px;
+	font-weight: bolder;
+	float: right;
+	margin-top:5px;
+
+}
+
+.vp_slide_label{
+	font-size: 15px;
+	text-align: center;
+	color:#000000;
+	margin-left: 15px;
+	margin-top:10px;
+	width: 75%;	
+	cursor:inherit;
+}
+
+.vp_msgBox{
+	background-color: #47FF47;
+	margin: 5px;
+	border-radius:10px;
+	padding: 10px;
+	display:none;
+}
+
+.vp_loader{
+	position: absolute;
+	top: 15%;
+	left: 60%;
+/*	display:none;
+	z-index: 99;  */
+}
+ 
+/* vp Styles CSS End*/ 
