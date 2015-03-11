@@ -117,7 +117,8 @@ function vaibhavslider_ajax_images_list() {
 	
 	if ($order != "") {
 		$order = explode ( ',', $order );
-		for($i = 0; $i < sizeof( $order ); $i ++) {
+                $cnt1=sizeof( $order );
+		for($i = 0; $i < $cnt1; $i ++) {
 			$vaibhavslider_post = get_post ( $order [$i] );
 			?>
 <br/>
@@ -153,7 +154,8 @@ add_action ( 'wp_ajax_vaibhavslider_ajax_update_order', 'vaibhavslider_ajax_upda
 function vaibhavslider_ajax_update_order() {
 	$newOrder = $_POST ['ID'];
 	$displayorder = "";
-	for($i = 0; $i < sizeof( $newOrder ); $i ++) {
+        $cnt2=sizeof( $newOrder );
+	for($i = 0; $i < $cnt2; $i ++) {
 		$displayorder = getOrder($displayorder,$newOrder [$i]);
 	}
 	update_option ( 'vaibhavslider_display_order', $displayorder );
@@ -170,7 +172,8 @@ function vaibhav_slider_Shortcode() {
 	$slide = '<div id="change" class="vertical-slider carousel vertical slide" data-ride="carousel" data-interval="4000"><ol class="carousel-indicators">';
 	if ($order != "") {
 		$order = explode ( ',', $order );
-		for($i = 0; $i < sizeof( $order ); $i ++) {
+                $cnt3=sizeof( $order );
+		for($i = 0; $i < $cnt3; $i ++) {
 			if ($i == 0) {
 				$slide .= '<li data-target="#change" data-slide-to="0" class="active"></li>';
 			} else {
@@ -182,7 +185,8 @@ function vaibhav_slider_Shortcode() {
 	$order = get_option ( 'vaibhavslider_display_order' );
 	if ($order != "") {
 		$order = explode ( ',', $order );
-		for($i = 0; $i < sizeof( $order ); $i ++) {
+                $cnt4=sizeof( $order );
+		for($i = 0; $i < $cnt4; $i ++) {
 			$vaibhavslider_post = get_post ( $order [$i] );
 			if ($i == 0) {
 				$slide .= '<div class="item active">
@@ -215,7 +219,8 @@ function vaibhavslider_delete_imagePost() {
 	$updateorder = "";
 	if ($order != "") {
 		$order = explode ( ',', $order );
-		for($i = 0; $i < sizeof( $order ); $i ++) {
+                $cnt5=sizeof( $order );
+		for($i = 0; $i < $cnt5; $i ++) {
 			if ($order [$i] != $postID) {
 				$updateorder = getOrder($updateorder,$order [$i]);
 			}
