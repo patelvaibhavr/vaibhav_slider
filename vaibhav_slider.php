@@ -201,7 +201,7 @@ function vaibhav_slider_Shortcode() {
 			}
 		}
 	}
-	$slide .= '<div>
+	$slide .= '</div>
   							<a class="left carousel-control" href="#change" role="button" data-slide="prev">
     								<span class="glyphicon glyphicon-circle-arrow-down"></span>
   							</a>
