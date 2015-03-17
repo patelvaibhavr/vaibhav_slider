@@ -9,7 +9,6 @@
  * Text Domain: http://vaibhavpatel.in/
  * License: GPL2
  */
-
 /*
  * Copyright 2014 - 2015 Vaibhav Patel (email : patelvaibhavr@yahoo.com)
  */
@@ -78,7 +77,6 @@ function ajax_vp_ajax_upload() {
 	if ($getimagesize [0] >= 100 && $getimagesize [1] >= 100) {
 		$upload_overrides = array ('test_form' => false);
 		$movefile = wp_handle_upload ( $image, $upload_overrides );
-		
 		if ($movefile) {
 			$my_post = array ();
 			$my_post ['post_content'] = $movefile ['url'];
@@ -97,7 +95,6 @@ function ajax_vp_ajax_upload() {
 	} else {
 		echo "2";
 	}
-	
 	die ();
 }
 
@@ -133,7 +130,6 @@ function vaibhavslider_ajax_images_list() {
 			<div class="img_wrap">
 				<img class="normal"	src="<?php echo $vaibhavslider_post->post_content;?>"/>
 			</div>
-
 		</div>
              <div class="wrap2">
              	<div class="wrap3"></div>
