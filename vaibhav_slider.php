@@ -75,7 +75,6 @@ add_action ( 'wp_ajax_vp_ajax_upload', 'ajax_vp_ajax_upload' );
 function ajax_vp_ajax_upload() {
 	$image = $_FILES ['url'];
 	$getimagesize = getimagesize ( $_FILES ['url'] ['tmp_name'] );
-	// echo "Width = ".$getimagesize[0] ."Hei = ". $getimagesize[1];
 	if ($getimagesize [0] >= 100 && $getimagesize [1] >= 100) {
 		$upload_overrides = array ('test_form' => false);
 		$movefile = wp_handle_upload ( $image, $upload_overrides );
