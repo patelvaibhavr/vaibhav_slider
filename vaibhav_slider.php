@@ -27,7 +27,7 @@ function vaibhav_slider() {
 function vaibhav_slider_menu() {
 	?>
 <div class="vp_loader">
-	<img src="<?php echo plugins_url('lib/css/loader.GIF', __FILE__); ?>" />
+	<img src="<?php echo plugins_url('lib/css/loader.gif', __FILE__); ?>" />
 </div>
 <div class="vaibhav_slider_admin vp_container">
 	<h2>Upload Images</h2><h4> (Shortcode : [vaibhav_slider] For Add Slider in your Page)</h4>
