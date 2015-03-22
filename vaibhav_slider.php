@@ -27,7 +27,7 @@ function vaibhav_slider() {
 function vaibhav_slider_menu() {
 	?>
 <div class="vp_loader">
-	<img src="<?php echo plugins_url('/lib/css/loader.GIF', __FILE__); ?>" />
+	<img src="<?php echo plugins_url('lib/css/loader.GIF', __FILE__); ?>" />
 </div>
 <div class="vaibhav_slider_admin vp_container">
 	<h2>Upload Images</h2><h4> (Shortcode : [vaibhav_slider] For Add Slider in your Page)</h4>
@@ -157,7 +157,7 @@ function vaibhavslider_ajax_update_order() {
 	die ();
 }
 
-add_shortcode ( 'vaibhav_slider', 'vaibhav_Slider_Shortcode' );
+add_shortcode ( 'vaibhav_slider', 'vaibhav_slider_Shortcode' );
 function vaibhav_slider_Shortcode() {
 	all_scripts ();
 	wp_enqueue_style ( 'vaibhavslider_bootstrap_style', plugins_url ( '/lib/css/bootstrap.min.css', __FILE__ ), array (), null, 'all' );
